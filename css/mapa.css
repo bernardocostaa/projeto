@@ -1,0 +1,106 @@
+/* Confi Geral */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/* Menu */
+.menu-bg{
+  background-color: #222;
+}
+.menu{
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.logo-menu img{
+  width: 150px;
+  height: 50px;
+}
+.menu-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-nav ul li{
+ list-style: none;
+}
+.menu-nav ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-decoration: none;
+}
+/* main */
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.infos-mapa{
+  background-color: #eee ;
+  border-radius: 8px;
+  padding: 10px;
+}
+.infos-mapa h2{
+  font-size: 38px;
+}
+.infos-mapa p{
+  margin-top: 10px;
+  font-size:26px;
+  margin-bottom: 25px;
+}
+.info-botoes-mapa{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.info-botoes-mapa button{
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: normal;
+  border: none;
+  background: #7f96ff;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.info-botoes-mapa button:hover{
+  background: #5674fc;
+
+}
+.mapa{
+  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.mapa img{
+  width: 100%;
+  height: 500px;
+}
+.ajuste{
+  margin-right: 30px;
+}
+footer{
+  margin-top: 60px;
+  background-color: #222;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  color: white;
+  font-size: 26px;
+}
+
+@media(max-width:800px) {
+  .info-botoes-mapa{
+    flex-direction: column;
+    justify-content: center;
+  }
+}

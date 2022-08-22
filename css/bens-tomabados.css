@@ -1,0 +1,131 @@
+/* Confi Geral */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/* Menu */
+.menu-bg{
+  background-color: #222;
+}
+.menu{
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.logo-menu img{
+  width: 150px;
+  height: 50px;
+}
+.menu-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-nav ul li{
+ list-style: none;
+}
+.menu-nav ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-decoration: none;
+}
+/* main */
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.conteudo-lista{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 80px;
+}
+.conteudo-img img{
+  width: 350px;
+  height: 350px;
+}
+.conteudo-info{
+  background-color: #eee ;
+  border-radius: 8px;
+  padding: 20px;
+}
+.conteudo-info:hover{
+  box-shadow: 5px 5px 5px rgb(167, 167, 167);
+  transition: .5s;
+}
+
+.info-endereco h2{
+  font-size: 38px;
+}
+.info-endereco p{
+  margin-top: 10px;
+  font-size:26px;
+  margin-bottom: 25px;
+}
+.info-adicional p{
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.info-botoes{
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-top: 50px;
+}
+.info-botoes button{
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: normal;
+  border: none;
+  background: #7f96ff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.botao-nav{
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: normal;
+  border: none;
+  background: #7f96ff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.botao-nav:hover{
+  background: #5674fc;
+}
+.info-botoes button:hover{
+  background: #5674fc;
+
+}
+footer{
+  margin-top: 60px;
+  background-color: #222;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  color: white;
+  font-size: 26px;
+}
+
+@media(max-width:800px){
+  .conteudo-lista{
+    grid-template-columns: 1fr;
+  }
+  .conteudo-img {
+    display: flex;
+    justify-content: center;
+  }
+  .info-botoes{
+    justify-content: center;
+  }
+}
+
