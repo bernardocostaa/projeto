@@ -120,3 +120,59 @@ footer p {
   color: white;
   font-size: 26px;
 }
+
+@media(max-width:800px){
+  .mobile{
+    display: flex;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .menu-mobile{
+    display: block;
+    border-top: 3px solid white;
+    width: 30px;
+  }
+  .menu-mobile::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  .menu-mobile::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  .menuu{
+    position: fixed;
+    background-color: #222;
+    top: 80px;
+    right: -100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.6s;
+    padding-bottom: 12px;
+  }
+  .menuu li{
+    padding: 15px;
+  }
+  .ativar{
+    position: absolute;
+    right: 0;
+  }
+}
