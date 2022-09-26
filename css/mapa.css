@@ -97,6 +97,17 @@ footer p {
   color: white;
   font-size: 26px;
 }
+.sub-menu{
+  display: none !important;
+  flex-direction: column;
+  top: 75px;
+  background: #222;
+  z-index: 200;
+}
+.ativarMenu{
+  position: absolute !important;
+  display: flex !important;
+}
 
 @media(max-width:800px) {
   .info-botoes-mapa{

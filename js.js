@@ -6,3 +6,11 @@ function abriMenu(){
 }
 
 menu.addEventListener('click',abriMenu)
+
+const subMenu = document.querySelector('.abri-sub-menu')
+const ativar = document.querySelector('.sub-menu')
+
+function abriMenuSub(){
+  ativar.classList.toggle('ativarMenu')
+}
+subMenu.addEventListener('click', abriMenuSub)
